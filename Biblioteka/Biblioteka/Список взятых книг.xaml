@@ -1,0 +1,25 @@
+﻿<Window x:Class="Biblioteka.Список_взятых_книг"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Biblioteka"
+        mc:Ignorable="d"
+        Title="Список_взятых_книг" Height="450" Width="800">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/ывпывр.png"/>
+        </Grid.Background>
+        <Button Content="Редактирование" HorizontalAlignment="Left" Height="49" Margin="600,274,0,0" VerticalAlignment="Top" Width="122" Background="#FF004165" Foreground="#FF009FDA" FontSize="14" FontWeight="Bold" FontFamily="Arial" Click="Button_Click"/>
+        <Button Content="Добавление" HorizontalAlignment="Left" Height="43" Margin="600,345,0,0" VerticalAlignment="Top" Width="122" Background="#FF004165" Foreground="#FF009FDA" FontWeight="Bold" FontFamily="Arial" FontSize="14" Click="Button_Click_1"/>
+        <ListView HorizontalAlignment="Left" Height="306" Margin="60,0,0,0" VerticalAlignment="Center" Width="487" d:ItemsSource="{d:SampleData ItemCount=5}" Background="#FF004165" Foreground="#FF009FDA">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <Label Content="Список доступных книг" Margin="208,0,253,375" HorizontalContentAlignment="Center" FontSize="24" FontFamily="Arial" FontWeight="Bold" Foreground="#FF009FDA"/>
+
+    </Grid>
+</Window>
